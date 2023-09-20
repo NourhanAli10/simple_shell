@@ -56,6 +56,7 @@ void exit_command(char **command);
 char *full_path(char **path, char *command);
 char *get_path(char *command);
 char *get_current_path();
+int count_token(char *path);
 
 /**error*/
 char *handle_error(char *argv[], char **command);
