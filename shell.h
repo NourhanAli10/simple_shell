@@ -34,10 +34,14 @@ int num_len(int num);
 /**command functions*/
 
 char **tokenize_command(char *buffer, ssize_t n, const char *delimiter);
-int exec_command(char **tokens, char *argv[]);
 char **get_command();
 void shell_interactive(void);
-char *handle_command(char **command, char *argv[]);
+
+/** execute command*/
+int exec_command(char **tokens, char *argv[]);
+char *handle_command(char **tokens, char *argv[]);
+void exceve_command(char *command, char **tokens, char *argv[]);
+int handle_exit_status(int status);
 
 
 /**env functions*/
