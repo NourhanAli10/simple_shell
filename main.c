@@ -18,8 +18,7 @@ int main(int argc, char *argv[])
 		buffer = get_command();
 		if (buffer != NULL)
 		{
-			 exec_command(buffer, argv);
-
+			exec_command(buffer, argv);
 			free_memory(buffer);
 
 		}
