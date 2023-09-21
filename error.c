@@ -20,7 +20,7 @@ char *handle_error(char *argv[], char **command)
 	prog_name = argv[0];
 	prog_len = _strlen(prog_name);
 	command_len = _strlen(command[0]);
-	line_error = _itoa(counter);
+	line_error = itoa(counter);
 	total_length = prog_len + command_len + _strlen(line_error) + 17;
 	error = malloc(total_length + 1);
 	if (error == NULL)

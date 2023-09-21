@@ -21,7 +21,7 @@ void exit_command(char **command)
 		}
 		else if (strncmp(command[i], "exit", _strlen("exit")) == 0 && command[i + 1])
 		{
-			status = atoi(command[i + 1]);
+			status = _atoi(command[i + 1]);
 			free_memory(command);
 			exit(status);
 		}

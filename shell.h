@@ -26,7 +26,7 @@ char *_strcat(char *dest, char *src);
 
 /** another helper function */
 int _putchar(char c);
-char *_itoa(int num);
+char *itoa(int number);
 int _lenNum(int num);
 int _atoi(char *s);
 

@@ -73,19 +73,32 @@ char *my_strdup(char *source)
 	return (copy_string);
 }
 
+
 /**
-* _print_rev_recursion - prints a string in reverse
-* @s: the string
+* reverse_string - prints a string in reverse
+* @str: the string
+* @length: length to be reversed
 */
 
-void _print_rev_recursion(char *s)
-{
-	if (*s == '\0')
-		return;
 
-	_print_rev_recursion(s + 1);
-	_putchar(*s);
+void reverse_string(char *str, int length)
+{
+	int start = 0;
+
+	int end = length - 1;
+
+	char temp;
+
+	while (start < end)
+	{
+		temp = str[start];
+		str[start] = str[end];
+		str[end] = temp;
+		start++;
+		end--;
+	}
 }
+
 
 /**
 * _strcat - concatenate two strings
