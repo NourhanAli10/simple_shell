@@ -20,14 +20,15 @@ extern char **environ;
 int _strlen(char *string);
 char *_strcopy(char *dest, char *src);
 char *my_strdup(char *source);
-void _print_rev_recursion(char *s);
+void reverse_string(char *str, int length);
 char *_strcat(char *dest, char *src);
 
 
 /** another helper function */
 int _putchar(char c);
 char *_itoa(int num);
-int num_len(int num);
+int _lenNum(int num);
+int _atoi(char *s);
 
 
 
